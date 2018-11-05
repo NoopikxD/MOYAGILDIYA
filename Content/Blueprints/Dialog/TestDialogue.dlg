@@ -1,0 +1,36 @@
+DlgVersion 7
+DlgName "TestDialogue"
+DlgGuid {  A -640262959 B 1106370157 C -1457443674 D -1033871910 }
+Node_Speech StartNode
+{
+	Text ""
+	SpeakerState "None"
+	bIsVirtualParent False
+	OwnerName "None"
+	bCheckChildrenOnEvaluation False
+	VoiceSoundWave ""
+	VoiceDialogueWave ""
+	Children { {  TargetIndex 0 Text "Next" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+}
+DlgParticipantClasses { {  ParticipantName "Test" ParticipantClass "" } }
+Node Nodes
+{
+	// 0
+	Node_Speech 
+	{
+		Text ""
+		SpeakerState "None"
+		bIsVirtualParent False
+		OwnerName "Test"
+		bCheckChildrenOnEvaluation False
+		VoiceSoundWave ""
+		VoiceDialogueWave ""
+		Children { {  TargetIndex 1 Text "Finish" SpeakerState "None" bIncludeInAllOptionListIfUnsatisfied True } }
+	}
+	// 1
+	Node_End 
+	{
+		OwnerName "None"
+		bCheckChildrenOnEvaluation False
+	}
+}
